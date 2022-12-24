@@ -13,7 +13,7 @@
 
 .container {
     width: 90%;
-    height: 200px;
+    /* height: 200px; */
     margin: 0 auto 20px;
     background-color: red;
 }
@@ -25,6 +25,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 999;
+    background-color: rgb(24, 24, 24);
 }
 
 .header {
@@ -71,7 +72,8 @@ header {
     color: #601cfc;
 }
 
-/*-------------======================HREDER MEDIA SCREEN==================------------------------*/
+/*======================header==>@media=================================
+================================================================*/
 
 @media (max-width:1023px) {
     .header {
@@ -89,3 +91,90 @@ header {
         gap: 20px;
     }
 }
+
+
+/*========================================================================================= 
+             section-1==>presentation
+===================================================================================================*/
+
+main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1 {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(24, 24, 24);
+    margin: 120px 0 0 0;
+    padding: 20px 10px;
+
+}
+
+.section-1 h2 {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+.section-1 h2 strong {
+    color: #4e9eff;
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
+.section-1 p {
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+.cafe {
+    font-size: 42px;
+}
+
+/*========================================================================================= 
+             section-1(identité)==>@media
+===================================================================================================*/
+
+@media (max-width:1000px) {
+
+    .section-1 {
+        margin: 200px 0 0 0;
+    }
+}
+@media (max-width:560px) {
+    .section-1 {
+        margin: 230px 0 0 0;
+        width: 100%;
+    }
+
+    .section-1 h2 strong {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    .cafe {
+        font-size: 32px;
+    }
+
+}
+
+/*========================================================================================= 
+             section-3==>Projets
+===================================================================================================*/
