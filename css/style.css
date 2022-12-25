@@ -49,7 +49,7 @@ header {
     color: #3a6cf4;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1rem;
 
 }
 
@@ -64,7 +64,7 @@ header {
 
 .navigation a {
     color: #3a6cf4;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     font-weight: 500;
     padding: 10px;
     /* background-color: #fce61c; */
@@ -109,7 +109,6 @@ main {
 
 .section-1 {
     width: 100%;
-    /* min-height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -124,24 +123,22 @@ main {
     width: 90%;
     margin: 0 auto;
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: 500;
-    text-align: left;
 }
 
 
 .section-1 h2 strong {
     color: #4e9eff;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
-
 }
 
 .section-1 p {
     width: 90%;
     margin: 0 auto;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1.4px;
 }
@@ -168,12 +165,12 @@ main {
     }
 
     .section-1 h2 strong {
-        font-size: 1.5em;
-        font-weight: 700;
+        font-size: 1.4rem;
+        font-weight: 600;
     }
 
     .cafe {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
 }
@@ -184,7 +181,7 @@ main {
 ===================================================================================================*/
 .section-2 .title h2 {
     color: #4e9eff;
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     line-height: 1.5;
@@ -193,7 +190,7 @@ main {
 }
 
 .section-2 .title h2 strong {
-    font-size: 0.75em;
+    font-size: 1.2rem;
     font-weight: 400;
     display: block;
     color: rgb(33, 30, 30);
@@ -235,13 +232,19 @@ main {
                    section2/@media 
 =============================================================================================== */
 @media (max-width:800px) {
-
+    .section-2 .title h2 {
+        font-size: 1.4rem;
+    }
+    .section-2 .title h2 strong {
+        font-size: 1rem;
+        font-weight: 400;
+    }
     .section-2 {
+        width: 100%;
         margin: 0 auto;
     }
 
     .sous-section {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -280,22 +283,20 @@ main {
 
 
 .section-3 {
-    width: 100%;
     background-color: rgb(24, 24, 24);
     padding-bottom: 30px;
 }
 
-.title {
+.section-3 .title {
     display: flex;
     justify-content: center;
     color: #3a6cf4;
-    font-size: 2.2em;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 600;
     margin: 30px 0;
 }
 
 .cards {
-    width: 85%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -306,8 +307,8 @@ main {
 
 .card {
     width: 21.25em;
-    min-width: 13em;
-    height: 25em;
+    min-width: 13rem;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,14 +365,97 @@ button a {
 }
 
 
-/* ==============================================media33333333333333333333333333333333333333333
+/* ==============================================section 3===> @media============================================
 ======================================================================*/
 
  @media (max-width:850px) {
         .cards {
-        width: 100%;   
+        width: 100%;  
+        padding: 0; 
+    }
+    .section-3 .title {
+        font-size: 1.4rem;
     }
 } 
 
 /*========================================
-    =============seciont-4=====================================================*/
+    =============seciont-4/Contact=====================================================*/
+    .section-4 .title {
+        display: flex;
+        justify-content: center;
+        color: #3a6cf4;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 30px 0;
+    }
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card-contact {
+    background-color: #fff;
+    width: 21.25rem;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 7px;
+    padding: 15px;
+    justify-content: center;
+    margin: 15px auto;
+    transition: 0.7s ease;
+}
+
+.card-contact:hover {
+    transform: scale(1.1);
+}
+
+.card-contact .info h3 {
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-contact .info p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-contact .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+/* 33333333333333333333333333333333333333media queri2222222222222222222222222 */
+
+@media (max-width:1100px) {
+    .section-4 {
+        width: 100%;
+    }
+
+    .section-4 .title {
+        font-size: 1.4rem;
+    }
+
+    .section-4 .info {
+        font-size: 1rem;
+
+    }
+
+}
+
+/*========================================
+    =============footer=====================================================*/
