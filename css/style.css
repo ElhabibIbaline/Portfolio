@@ -21,6 +21,7 @@
 ================================================================*/
 header {
     background-color: #f0f0f0;
+    background-color: #000016;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -114,6 +115,7 @@ main {
     align-items: flex-start;
     flex-direction: column;
     background-color: rgb(24, 24, 24);
+    background-color: #131951;
     margin: 120px 0 0 0;
     padding: 20px 10px;
 
@@ -283,8 +285,9 @@ main {
 
 
 .section-3 {
-    background-color: rgb(24, 24, 24);
+    background-color: #131951;
     padding-bottom: 30px;
+    border-radius: 7px;
 }
 
 .section-3 .title {
@@ -326,7 +329,7 @@ main {
 
 .card img {
     width: 100%;
-    border-radius: 7px;
+    border-radius: 7px 7px 0 0;
     flex-grow: 1;
 
 }
@@ -439,7 +442,8 @@ button a {
     text-align: center;
 }
 
-/* 33333333333333333333333333333333333333media queri2222222222222222222222222 */
+/* ==========================@media=========================================
+=============================================================================== */
 
 @media (max-width:1100px) {
     .section-4 {
@@ -459,3 +463,69 @@ button a {
 
 /*========================================
     =============footer=====================================================*/
+    footer {
+        width: 100%;
+        background-color: #000016;
+        /* background-color: #f0f0f0; */
+    }
+    
+  .footer-content {
+        width: 90%;
+        margin: 0 auto;
+        color: #000;
+        padding: 20px 5px;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+
+        /* background-color: red; */
+    }
+    .footer-content .sep {
+
+ color: #3a6cf4;
+ size: 2rem;
+    }
+    
+    .footer-title {
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    
+    .footer-title span {
+        color: #3a6cf4;
+    }
+    
+    .footer-content .social-icons a {
+        font-size: 1.3rem;
+        padding:10px 5px;
+        margin-left: 40px;
+        color: #000;
+        color: #fff;
+        color: #3a6cf4;
+    }
+    .footer-content .social-icons {
+        /* background-color: green; */
+    }
+
+
+/* ==========================@media=========================================
+=============================================================================== */
+@media (max-width:850px) {
+    .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .footer-title {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .footer-content .social-icons a {
+        margin:20px  0;
+       
+    }
+    .footer-content .social-icons{
+        margin:20px 0 5px 0;
+       
+    }
+
+}
